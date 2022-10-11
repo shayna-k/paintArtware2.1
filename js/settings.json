@@ -1,0 +1,17 @@
+{
+  "version": 2.0,
+  "functions": [
+    "export"
+  ],
+  "tools": [
+    "pencil"
+  ],
+  "filters": [
+    "invert"
+  ],
+  "options": [
+    "randomDog",
+    "lineWidth",
+    "randomColor"
+  ]
+}
