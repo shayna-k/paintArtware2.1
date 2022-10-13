@@ -17,11 +17,13 @@ window.tools.zoom = {
         return (x * rowLen) + (y * 4)
       }
 
+      if (self.state.selected === false) {
+        return
+      }
+
       const mouse = app.eventToMouse(e)
       const px = Math.floor(mouse.x)
       const py = Math.floor(mouse.y)
-
-      console.log(py)
 
       const minX = Math.max(0, px - self.state.range)
       const minY = Math.max(0, py - self.state.range)
@@ -37,7 +39,6 @@ window.tools.zoom = {
       }
 
       const range = self.state.range
-      console.log(pixels.length)
 
       var srcIdx
       var newX
