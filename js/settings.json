@@ -5,11 +5,11 @@
   ],
   "tools": [
     "pencil",
+    "eraser",
     "oscCircles"
   ],
   "filters": [
-    "invert",
-    "red"
+    "invert"
   ],
   "options": [
     "randomDog",
