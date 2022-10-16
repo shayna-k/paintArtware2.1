@@ -5,7 +5,9 @@
   ],
   "tools": [
     "pencil",
-    "rainbow"
+    "rainbow",
+    "oscCircles",
+    "gradientBrush"
   ],
   "filters": [
     "invert"
