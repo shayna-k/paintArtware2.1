@@ -7,6 +7,9 @@ window.tools.rainbow = {
     mousePressed: false,
     prevMouse: { x: null, y: null }
   },
+  getRandomColor: function () {
+    return { g: Math.floor(Math.random() * 256), b: Math.floor(Math.random() * 256) }
+  },
   events: {
     mousedown: function (e, self) {
       self.state.mousePressed = true
@@ -26,7 +29,7 @@ window.tools.rainbow = {
         app.ctx.moveTo(mouse.x, mouse.y)
         app.ctx.lineTo(px, py)
         app.ctx.closePath()
-        app.ctx.strokeStyle = getRandomColor()
+        app.ctx.strokeStyle = self.getRandomColor()
         app.ctx.stroke()
         // update prevMouse coordinates
         self.state.prevMouse = { x: mouse.x, y: mouse.y }
@@ -35,11 +38,3 @@ window.tools.rainbow = {
   }
 }
 
-function getRandomColor () {
-  var letters = '0123456789ABCDEF'
-  var color = '#'
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)]
-  }
-  return color
-}

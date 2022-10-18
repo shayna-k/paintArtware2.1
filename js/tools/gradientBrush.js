@@ -1,3 +1,4 @@
+/* global app */
 window.tools.gradientBrush = {
   name: 'gradientBrush',
   icon: '/images/gradient-icon.png',
@@ -7,6 +8,9 @@ window.tools.gradientBrush = {
     prevMouse: { x: null, y: null },
     baseColor: { g: 150, b: 150 }
   },
+  getRandomColor: function () {
+    return { g: Math.floor(Math.random() * 256), b: Math.floor(Math.random() * 256) }
+  },
   events: {
     mousedown: function (e, self) {
       self.state.mousePressed = true
@@ -14,7 +18,7 @@ window.tools.gradientBrush = {
     mouseup: function (e, self) {
       self.state.mousePressed = false
       self.state.prevMouse = { x: null, y: null }
-      self.state.baseColor = getRandomColor();
+      self.state.baseColor = self.getRandomColor()
     },
     mousemove: function (e, self) {
     // if self tool is selected AND the mouse is pressed
@@ -35,7 +39,7 @@ window.tools.gradientBrush = {
           app.ctx.moveTo(mouse.x + i, mouse.y)
           app.ctx.lineTo(px + i, py)
           app.ctx.closePath()
-          app.ctx.strokeStyle = `rgb(${i},${self.state.baseColor.g}, ${self.state.baseColor.b})`;
+          app.ctx.strokeStyle = `rgb(${i},${self.state.baseColor.g}, ${self.state.baseColor.b})`
           app.ctx.stroke()
         }
         // update prevMouse coordinates
@@ -43,8 +47,4 @@ window.tools.gradientBrush = {
       }
     }
   }
-}
-
-function getRandomColor () {
-  return { g: Math.floor(Math.random() * 256), b: Math.floor(Math.random() * 256) }
 }
