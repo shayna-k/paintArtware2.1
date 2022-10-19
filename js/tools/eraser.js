@@ -18,15 +18,13 @@ window.tools.eraser = {
       if (self.state.selected && self.state.mousePressed) {
         const mouse = app.eventToMouse(e)
         const radius = app.ctx.lineWidth * 10
-        const oldFill = app.ctx.fillStyle
+        app.ctx.save()
         app.ctx.globalAlpha = 0.5
         app.ctx.fillStyle = 'white'
         app.ctx.beginPath()
         app.ctx.arc(mouse.x, mouse.y, radius, 0, 2 * Math.PI, false)
         app.ctx.fill()
-        // app.ctx.lineWidth = 5
-        app.ctx.fillStyle = oldFill
-        // app.ctx.globalAlpha = 1
+        app.ctx.restore()
       }
     }
   }
