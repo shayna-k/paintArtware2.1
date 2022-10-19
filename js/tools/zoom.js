@@ -34,19 +34,19 @@ window.tools.zoom = {
 
       const pixels = pixelsObj.data
 
-      for (var i = 3; i < pixels.length; i += 4) {
+      for (let i = 3; i < pixels.length; i += 4) {
         pixels[i] = 255
       }
 
       const range = self.state.range
 
-      var srcIdx
-      var newX
-      var newY
-      var dist
-      var x
-      var y
-      var newIdx
+      let srcIdx
+      let newX
+      let newY
+      let dist
+      let x
+      let y
+      let newIdx
 
       for (dist = self.state.range; dist >= 1; dist--) {
         // we go top
