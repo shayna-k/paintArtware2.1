@@ -6,6 +6,7 @@
   "tools": [
     "pencil",
     "eraser",
+    "randAlpha",
     "oscCircles"
   ],
   "filters": [
