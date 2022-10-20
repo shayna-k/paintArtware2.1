@@ -19,8 +19,8 @@ window.tools.randAlpha = {
       if (self.state.selected && self.state.mousePressed) {
         app.ctx.save()
         const mouse = app.eventToMouse(e)
-        const fonts = ['Times New Roman', 'Arial', 'monospace', 'Comic Sans']
-        let randFont = Math.floor(Math.random() * 4)
+        const fonts = ['Times New Roman', 'Arial', 'monospace', 'Comic Sans', 'fantasy']
+        let randFont = Math.floor(Math.random() * fonts.length)
         let randSize = Math.floor(Math.random() * 70) + 15
         // draw random integers between 0-9
         app.ctx.font = randSize + 'px ' + fonts[randFont]
