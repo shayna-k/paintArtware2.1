@@ -5,12 +5,16 @@
   ],
   "tools": [
     "pencil",
-    "oscCircles",
-    "heart"
+    "oscCircles"
   ],
   "filters": [
     "invert",
-    "pink"
+    "pink",
+    "zoom"
+  ],
+  "filters": [
+    "invert",
+    "sepia"
   ],
   "options": [
     "randomDog",
