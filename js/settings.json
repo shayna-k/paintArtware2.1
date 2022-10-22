@@ -5,7 +5,11 @@
   ],
   "tools": [
     "pencil",
-    "oscCircles",
+    "oscCircles"
+  ],
+  "filters": [
+    "invert",
+    "pink",
     "zoom"
   ],
   "filters": [
