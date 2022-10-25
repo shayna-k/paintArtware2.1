@@ -9,7 +9,8 @@
     "mathRandom"
   ],
   "filters": [
-    "invert"
+    "invert",
+    "grayscale"
   ],
   "options": [
     "randomDog",
