@@ -16,12 +16,12 @@
     "invert",
     "opacity",
     "pink",
-    "zoom",
-    "dark"
+    "zoom"
   ],
   "filters": [
     "invert",
-    "sepia"
+    "sepia",
+    "dark"
   ],
   "options": [
     "randomDog",
