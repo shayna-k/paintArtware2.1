@@ -7,10 +7,20 @@
     "pencil",
     "rainbow",
     "oscCircles",
-    "gradientBrush"
+    "gradientBrush",
+    "eraser",
+    "randAlpha",
+    "oscCircles"
   ],
   "filters": [
-    "invert"
+    "invert",
+    "opacity",
+    "pink",
+    "zoom"
+  ],
+  "filters": [
+    "invert",
+    "sepia"
   ],
   "options": [
     "randomDog",
