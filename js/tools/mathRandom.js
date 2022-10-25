@@ -19,10 +19,9 @@ window.tools.mathRandom = {
         const mouse = app.eventToMouse(e)
         // draw random integers between 0-9
         app.ctx.font = '48px sans serif'
-        app.ctx.fill()
+        app.ctx.strokeText(Math.floor(Math.random() * (9 - 0 + 1) + 0), mouse.x, mouse.y)
         app.ctx.fillText(Math.floor(Math.random() * (9 - 0 + 1) + 0), mouse.x, mouse.y)
-        app.ctx.fillStyle = 'black'
-        app.ctx.stroke()
+        app.ctx.fillStyle = 'white'
       }
     }
   }
