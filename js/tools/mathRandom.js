@@ -5,7 +5,6 @@ window.tools.mathRandom = {
   state: {
     selected: false,
     mousePresesd: false
-    // other state properties go here
   },
   events: {
     mousedown: function (e, self) {
@@ -20,6 +19,7 @@ window.tools.mathRandom = {
         const mouse = app.eventToMouse(e)
         // draw random integers between 0-9
         app.ctx.font = '48px sans serif'
+        app.ctx.fill()
         app.ctx.fillText(Math.floor(Math.random() * (9 - 0 + 1) + 0), mouse.x, mouse.y)
         app.ctx.fillStyle = 'black'
         app.ctx.stroke()
