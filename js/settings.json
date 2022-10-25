@@ -5,6 +5,8 @@
   ],
   "tools": [
     "pencil",
+    "oscCircles",
+    "mathRandom",
     "rainbow",
     "oscCircles",
     "gradientBrush",
@@ -15,6 +17,7 @@
   ],
   "filters": [
     "invert",
+    "grayscale",
     "opacity",
     "pink",
     "sepia"
