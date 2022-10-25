@@ -74,7 +74,7 @@ events: {
 
 These event functions will give you access to two objects via it's arguments. The first (which I've defined as `e` above) is the standard [event object](https://developer.mozilla.org/en-US/docs/Web/API/Event) which is typically passed into any browser [window event](https://developer.mozilla.org/en-US/docs/Web/Events), the second (which I've defined as `self` above) is a reference to the tool itself. You can use this to access your tool's state like `self.state` or any other property in your tool like `self.icon` for example.
 
-### Canvas API "considerations
+### Canvas API considerations
 
 While you can technically use this function to execute any arbitrary code when the user selects your tool and triggers any of the events you defined, the purpose of these "tool" objects is to produce some change (add or remove pixels) in the canvas, which can be done using the Canvas API directly (see MDN's docs to learn more about the Web's [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)).
 
