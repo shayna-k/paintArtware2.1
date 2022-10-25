@@ -10,13 +10,13 @@
     "gradientBrush",
     "eraser",
     "randAlpha",
-    "oscCircles"
+    "oscCircles",
+    "zoom"
   ],
   "filters": [
     "invert",
     "opacity",
     "pink",
-    "zoom",
     "sepia"
   ],
   "options": [
