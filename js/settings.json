@@ -1,28 +1,27 @@
 {
-  "version": 2.0,
+  "version": 2.1,
   "functions": [
     "export"
   ],
   "tools": [
     "pencil",
+    "oscCircles",
+    "mathRandom",
     "rainbow",
     "oscCircles",
     "gradientBrush",
     "eraser",
     "randAlpha",
     "oscCircles",
+    "zoom",
     "star"
   ],
   "filters": [
     "invert",
+    "grayscale",
     "opacity",
     "pink",
-    "zoom"
-  ],
-  "filters": [
-    "invert",
-    "sepia",
-    "dark"
+    "sepia"
   ],
   "options": [
     "randomDog",
