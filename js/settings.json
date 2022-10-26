@@ -5,14 +5,6 @@
   ],
   "tools": [
     "pencil",
-<<<<<<< HEAD
-    "oscCircles",
-    "sparkle"
-  ],
-  "filters": [
-    "invert",
-    "dark"
-=======
     "rainbow",
     "oscCircles",
     "gradientBrush",
@@ -29,7 +21,6 @@
   "filters": [
     "invert",
     "sepia"
->>>>>>> b2564db6728b17e8a2bbd32430be6c252dff9658
   ],
   "options": [
     "randomDog",
