@@ -10,7 +10,8 @@
     "gradientBrush",
     "eraser",
     "randAlpha",
-    "oscCircles"
+    "oscCircles",
+    "star"
   ],
   "filters": [
     "invert",
